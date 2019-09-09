@@ -5,18 +5,16 @@
     <script>
 
         
-        function foo(a) {
+var TAX_RATE = 0.08;	// 8% sales tax
 
-	var b = a * 2;
+var amount = 99.99;
 
-	function bar(c) {
-		console.log( a, b, c );
-	}
+amount = amount * 2;
 
-	bar(b * 3);
-	}
+amount = amount + (amount * TAX_RATE);
 
-	foo( 2 ); // 2 4 12
+console.log( amount );				// 215.9784
+console.log( amount.toFixed( 2 ) );	// "215.98"
         
     </script>
 </head>
